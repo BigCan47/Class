@@ -4,8 +4,13 @@
 
 财务部门调整了合同金额
 
+<<<<<<< HEAD
 BC1 对其进行了修改
 我和你 心连心 守护地球村
 啦啦啦！
 
 You just a shabby guy
+=======
+between us and
+ between we
+>>>>>>> 4342e6811af96effe2d17646c5c0f30c9bc67e58
