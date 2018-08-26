@@ -10,6 +10,12 @@
 		h2{ color:blue}
 		span:hover{color:red;
 		cursor: pointer/* cursor；pointer使得点击文字时 鼠标变成了 手 不然 就是纯粹地选择文字 */}
+		p1{color:red;} /*权值为1*/
+		p span{color:green;} /*权值为1+1=2
+		*/.first{color:grey;} /*权值为10
+		*/p span>second{color:purple;} /*权值为1+1+10=12
+		*/#footer .note p{color:yellow;} /*权值为100+10+1=111*/
+		p1{color:green!important;}/*最重要的*/
 	</style>
 
 </head>
@@ -19,5 +25,7 @@
 	<h2>这是标题标签</h2>
 	<h6>这是标题标签</h6>
 	<span>只是一个伪类选择器的测试</span>
+	<p1 class="first">三年级时，我还是一个<span>胆小<second>如鼠</second></span>的小女孩。</p2>
+	<p class="first">三年级时，我还是一个<span>胆小<second>如鼠</second></span>的小女孩。</p>
 </body>
 </html>
