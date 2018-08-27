@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.clearfix:after {
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+		.clearfix {
+			display: inline-block;
+		}
+		html[xmlns] .clearfix {
+			display: block;
+		}
+		* html .clearfix {
+			height: 1%;
+		}
+		a {
+			text-decoration: none;
+		}
+		.wrapper {
+			/* overflow: hidden; */
+		}
+		.wrapper > div {
+			border: 1px solid #000;
+			width: 300px;
+			height: 200px;
+			float: left;
+		}
+		.menu > ul {
+			list-style: none;
+			padding-left: 0;
+		}
+		.menu > ul > li {
+			float: left;
+			margin: 0 10px;
+		}
+		.menu > ul > li > a {
+			color: #333;
+		}
+		.menu > ul > li > a:hover {
+			color:rgb(200,22,35);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<div>div-1</div>
+		<div class="last">div-2</div>
+	</div>
+	<!--
+	<div style="clear: both"></div>
+	-->
+	<div class="menu">
+		<ul class="clearfix">
+			<li><a href="#">秒杀</a></li>
+			<li><a href="#">优惠券</a></li>
+			<li><a href="#">PLUS会员</a></li>
+			<li><a href="#">闪购</a></li>
+		</ul>
+	</div>
+	<span></span>
+</body>
+</html>
