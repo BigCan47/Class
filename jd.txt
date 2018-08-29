@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css" >
+            .base{
+                width:200px;
+                background-color: white;
+            }
+            #logo{
+                height: 180px;
+            }
+            .blank{
+                border:1px solid #cccccc;
+                border-left: 0px;
+                border-right:0px;
+                border-bottom: 0px;
+                height: 10px; 
+            }
+           .content>div:hover{background:#cccccc}
+           .content>div{
+                height:20px;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                padding-left: 20px;
+                font-size:14.5px;
+           }
+            a:hover{
+                color:red;
+                cursor: pointer;
+            }
+            .blank1{
+                height: 10px; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="base">
+        <div id="logo"><img src="img/QQ图片20180826194630.png" width="200" height="180"/></div>
+        <div class="blank"></div>
+        <div class="content"> 
+            <div><a>家用电器</a></div>
+            <div><a>手机</a>/<a>运营商</a>/<a>数码</a></div>
+            <div><a>电脑</a>/<a>办公</a></div>
+            <div><a>家居</a>/<a>家具</a>/<a>家装</a>/<a>厨具</a></div>
+            <div><a>男装</a>/<a>女装</a>/<a>童装</a>/<a>内衣</a></div>
+            <div><a>美妆</a>/<a>个护清洁</a>/<a>宠物</a></div>
+            <div><a>女鞋</a>/<a>箱包</a>/<a>钟表</a>/<a>珠宝</a></div>
+            <div><a>男鞋</a>/<a>运动</a>/<a>户外</a></div>
+            <div><a>房产</a>/<a>汽车</a>/<a>汽车用品</a></div>
+            <div><a>母婴</a>/<a>玩具乐器</a></div>
+            <div><a>食品</a>/<a>酒类</a>/<a>生鲜</a>/<a>特产</a></div>
+            <div><a>艺术</a>/<a>礼品鲜花</a>/<a>农资绿植</a></div>
+            <div><a>医药保健</a>/<a>计生情趣</a></div>
+            <div><a>图书</a>/<a>音像</a>/<a>电子书</a></div>
+            <div><a>机票</a>/<a>酒店</a>/<a>旅游</a>/<a>生活</a></div>
+            <div><a>理财</a>/<a>众筹</a>/<a>白条</a>/<a>保险</a></div>
+            <div><a>安装</a>/<a>维修</a>/<a>清洗保养</a></div>
+        </div>  
+        <div class="blank1"></div>
+        </div>
+    </body>
+</html>

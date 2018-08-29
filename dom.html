@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dom</title>
+	<!--
+	<script type="text/javascript" src="xxx.js"></script>
+	-->
+	<style type="text/css">
+		.demo {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div id="div1" class="demo demo1 demo2">
+			<div>div-1</div>
+			<div>div-2</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var div1 = document.getElementById("div1");
+		//div1.innerHTML = "这是js修改以后的内容";
+		var html = div1.innerHTML;
+		div1.style.color = "red";
+		div1.style.fontSize = "22px";
+		//div1.style.display = "inline-block";
+		//div1.style.textDecoration = "underline";
+		div1.className = "demo demo1 demo2";
+		var className = div1.className;
+		var cn1 = div1.getAttribute("class");
+		//alert(className);
+		div1.title = "这是title";
+		var title = div1.title;
+		div1.className = "";
+		div1.setAttribute("class", "demo demo1 demo2");
+		div1.setAttribute("title", "这是通过setAttribute添加的title");
+		var title1 = div1.getAttribute("title");
+		div1.removeAttribute("title");
+
+		var strong = document.createElement("strong");
+		strong.innerHTML = "用js创建的strong标签";
+		div1.appendChild( strong );
+		div1.removeChild( strong );
+
+		div1.parentNode.className = "demo";
+		div1.firstChild.nextSibling.innerHTML = "这是第一个子节点";
+		div1.firstChild.nextSibling.nextSibling.nextSibling.innerHTML = "第二个";
+		//div1.lastChild.previousSibling.innerHTML
+		var childNodes = div1.childNodes;
+		for(var i = 0; i < childNodes.length; i++){
+			var node = childNodes[i];
+			if( "#text" != node.nodeName ){
+				node.onclick = function(){
+					alert(this.innerHTML);
+				}
+			}
+		}
+	</script>
+</body>
+</html>

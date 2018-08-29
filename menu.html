@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
+		body{background: #cccccc;}
 		.menu{margin:0;
 			padding:0;
 		}
@@ -26,19 +27,29 @@
 			height: 0;
 		}
 
-		.menu>li{padding:0;
+		.menu1>li{padding:0;
 			
 			display: inline;	}
-		.menu>li>a{
+		.menu1>li>a{
 			border: 1px solid white;
-			padding: 10px;
 			float:left;
 			display: inline;
 			background: #cccccc;
 			height:40px;
-			line-height:40px;
 		}
-		.menu>li>a:hover{color:red;
+		.menu1>li>a:hover{color:red;
+			cursor:pointer;}
+		.menu2>li{padding:0;
+			
+			display: inline;	}
+		.menu2>li>a{
+			border: 1px solid white;
+			float:left;
+			display: inline;
+			background: #cccccc;
+			height:40px;
+		}
+		.menu2>li>a:hover{color:red;
 			cursor:pointer;}
 			
 		
@@ -46,13 +57,17 @@
 		
 </head>
 <body>
-	<ul class="menu clearfix">
+	<ul class="menu ">
+		<ul class=menu1>
 		<li><a>秒杀</a></li>
 		<li><a>优惠券</a></li>
 		<li><a>PLUS会员</a></li>
 		<li><a>闪购</a></li>
+		</ul >
+		<ul class=menu2>
 		<li><a>闪购1</a></li>
 		<li><a>闪购2</a></li>
+		</ul>
 	</ul>
 </body>
 </html>
